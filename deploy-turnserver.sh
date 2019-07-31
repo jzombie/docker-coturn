@@ -1,3 +1,8 @@
+#!/bin/bash
+
+# Exit on any error
+set -e
+
 echo "USERNAME: $USERNAME"
 echo "PASSWORD: $PASSWORD"
 echo "REALM: $REALM"

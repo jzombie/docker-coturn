@@ -1,5 +1,5 @@
-FROM ubuntu:16.04
-MAINTAINER Dennis Boldt <info@dennis-boldt.de>
+FROM ubuntu:18.04
+LABEL maintainer="zenOSmosis <info@zenosmosis.com>"
 
 # Set the working directory to /app
 WORKDIR /app
@@ -18,7 +18,7 @@ ENV MAX_PORT=65535
 RUN apt-get update && apt-get install -y \
     dnsutils \
     coturn \
+    iproute2 \ 
   && rm -rf /var/lib/apt/lists/*
   
-
 ENTRYPOINT ["bash", "deploy-turnserver.sh"]    

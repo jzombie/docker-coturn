@@ -2,8 +2,8 @@
 
 A Docker container with the [Coturn TURN server](https://github.com/coturn/coturn).
 
-* hub.docker.com (Docker image): [boldt/coturn](https://hub.docker.com/r/boldt/coturn/)
-* github.com (Repo): [boldt/turn-server-docker-image](https://github.com/boldt/turn-server-docker-image)
+* hub.docker.com (Docker image): [zenosmosis/docker-coturn](https://hub.docker.com/r/zenosmosis/docker-coturn/)
+* github.com (Repo): [zenOSmosis/docker-coturn](https://github.com/zenOSmosis/docker-coturn)
 
 # Run the container
 
@@ -15,7 +15,7 @@ docker run \
   -p 65435-65535:65435-65535/udp \
   --restart=always \
   --name coturn \
-  boldt/coturn
+  zenosmosis/docker-coturn
 ```
 
 ## Environment variables
@@ -46,7 +46,7 @@ docker run \
   -e MAX_PORT=${MAX_PORT} \
   --restart=always \
   --name coturn \
-  boldt/coturn
+  zenosmosis/docker-coturn
 ```
 
 ## Certificates
@@ -63,7 +63,7 @@ docker run \
   --volume /opt/pkey.pem:/etc/ssl/turn_server_pkey.pem \
   --restart=always \
   --name coturn \
-  boldt/coturn
+  zenosmosis/docker-coturn
 ```
 
 ## Debugging
@@ -73,26 +73,27 @@ docker logs coturn
 docker exec -it coturn /bin/bash
 ```
 
-# Build and push the container
-
-(For own documentation)
+# Bonus: Build and push the container to [Docker Hub](https://hub.docker.com/)
 
 ```bash
 # Clone
-git clone git clone git@github.com:boldt/turn-server-docker-image.git
+git clone https://github.com/zenOSmosis/docker-coturn.git 
 
 # Build
-docker build -t boldt/coturn .
+docker build -t zenosmosis/docker-coturn .
 
 # Tag
 VERSION=0.0.2
-docker tag boldt/coturn boldt/coturn:$VERSION
+docker tag zenosmosis/docker-coturn zenosmosis/docker-coturn:$VERSION
+
+# Login to Docker (if not already logged in)
+docker login
 
 # Push
-docker push boldt/coturn:latest
-docker push boldt/coturn:$VERSION
+docker push zenosmosis/docker-coturn:latest
+docker push zenosmosis/docker-coturn:$VERSION
 ```
 
 # Thanks
 
-The initial image of this image was created by [anastasiia-zolochevska/turn-server-docker-image](https://github.com/anastasiia-zolochevska/turn-server-docker-image)
+The initial version of this image was created by [anastasiia-zolochevska/turn-server-docker-image](https://github.com/anastasiia-zolochevska/turn-server-docker-image).  Thanks to [boldt/turn-server-docker-image](https://github.com/boldt/turn-server-docker-image) for the README.md and Dockerfile updates.
