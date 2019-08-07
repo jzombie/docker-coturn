@@ -92,6 +92,9 @@ docker login
 # Push
 docker push zenosmosis/docker-coturn:latest
 docker push zenosmosis/docker-coturn:$VERSION
+
+# At this point, you MAY want to log out of Docker, as it could cause authentication errors when trying to build other's containers
+docker logout
 ```
 
 # Thanks
