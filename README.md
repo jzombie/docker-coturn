@@ -28,7 +28,7 @@ This image supports some environment variables:
 * `MIN_PORT`: This defines the min-port for the range used by turn. Defaults to `65435`
 * `MAX_PORT`: This defines the max-port for the range used by turn. Defaults to `65535`
 
-An example:
+*An example:*
 
 ```bash
 # This makes sure, that the min- and max-port is the same for all environment variables
@@ -48,6 +48,14 @@ docker run \
   --name coturn \
   zenosmosis/docker-coturn
 ```
+
+*An easier example (if Docker Compose is installed)*
+
+```bash
+docker-compose up
+```
+
+(see [docker-compose.yml](docker-compose.yml) for configuration)
 
 ## Certificates
 
