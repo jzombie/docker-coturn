@@ -16,9 +16,9 @@ ENV MIN_PORT=65435
 ENV MAX_PORT=65535
 
 RUN apt-get update && apt-get install -y \
-    dnsutils \
-    coturn \
-    iproute2 \ 
+  dnsutils \
+  coturn \
+  iproute2 \ 
   && rm -rf /var/lib/apt/lists/*
-  
-ENTRYPOINT ["bash", "deploy-turnserver.sh"]    
+
+ENTRYPOINT ["bash", "sh/deploy-turnserver.sh"]    
