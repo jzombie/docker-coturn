@@ -7,8 +7,8 @@ services:
       USERNAME: username # For example, only
       PASSWORD: password # For example, only
       REALM: realm # For example, only
-    ports:
-      - 3478:3478
-      - 3478:3478/udp
-      - 65435-65535:65435-65535/udp
+    # ports:
+    #  - 3478:3478
+    #  - 3478:3478/udp
+    #  - 65435-65535:65435-65535/udp
     network_mode: host # Expose directly on the host

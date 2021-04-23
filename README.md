@@ -11,6 +11,8 @@ A Docker container with the [Coturn TURN server](https://github.com/coturn/cotur
 * hub.docker.com (Docker image): [zenosmosis/docker-coturn](https://hub.docker.com/r/zenosmosis/docker-coturn/)
 * github.com (Repo): [zenOSmosis/docker-coturn](https://github.com/zenOSmosis/docker-coturn)
 
+Note, for those who would rather build this sort of thing from scratch, here's an article written by the author of the original package we forked from:  https://devblogs.microsoft.com/cse/2018/01/29/orchestrating-turn-servers-cloud-deployment.
+
 # Run the container
 
 ```bash
