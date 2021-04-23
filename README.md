@@ -1,3 +1,4 @@
+[![MIT License](https://img.shields.io/github/license/zenosmosis/docker-coturn)](https://raw.githubusercontent.com/zenOSmosis/docker-coturn/master/LICENSE)
 [![ci][ci-image]][ci-url]
 
 [ci-image]: https://github.com/zenosmosis/docker-coturn/actions/workflows/ci.yml/badge.svg
