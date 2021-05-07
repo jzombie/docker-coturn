@@ -4,7 +4,7 @@
 [ci-image]: https://github.com/zenosmosis/docker-coturn/actions/workflows/ci.yml/badge.svg
 [ci-url]: https://github.com/zenOSmosis/docker-coturn/actions
 
-# Docker image for TURN server
+# Docker image for Coturn TURN / STUN server
 
 A Docker container with the [Coturn TURN server](https://github.com/coturn/coturn).
 
