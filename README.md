@@ -15,6 +15,8 @@ Note, for those who would rather build this sort of thing from scratch, here's a
 
 # Run the container
 
+### Without Docker Compose
+
 ```bash
 docker run \
   -d \
@@ -24,6 +26,12 @@ docker run \
   --restart=always \
   --name coturn \
   zenosmosis/docker-coturn
+```
+
+### With Docker Compose
+
+```bash
+docker-compose up
 ```
 
 ## Environment variables
