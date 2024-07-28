@@ -1,8 +1,8 @@
-[![MIT License](https://img.shields.io/github/license/zenosmosis/docker-coturn)](https://raw.githubusercontent.com/zenOSmosis/docker-coturn/master/LICENSE)
+[![MIT License](https://img.shields.io/github/license/jzombie/docker-coturn)](https://raw.githubusercontent.com/jzombie/docker-coturn/master/LICENSE)
 [![ci][ci-image]][ci-url]
 
-[ci-image]: https://github.com/zenosmosis/docker-coturn/actions/workflows/ci.yml/badge.svg
-[ci-url]: https://github.com/zenOSmosis/docker-coturn/actions
+[ci-image]: https://github.com/jzombie/docker-coturn/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/jzombie/docker-coturn/actions
 
 # Docker image for Coturn TURN / STUN server
 
